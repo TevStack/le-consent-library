@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.13.1",
+  "version": "2026.10.13.2",
   "cookies": [
     {
       "name": "le_consent",
@@ -961,6 +961,30 @@
       "processor": "whatconverts",
       "duration": "Varies",
       "description": "Identifies the visitor so calls, forms and chats can be attributed to the ad or search that brought them."
+    },
+    {
+      "name": "wc_visitor",
+      "category": "marketing",
+      "provider": "WhatConverts",
+      "processor": "whatconverts",
+      "duration": "Varies",
+      "description": "Identifies a returning visitor so their calls, forms and chats can be linked to the traffic source that first brought them."
+    },
+    {
+      "name": "wc_client",
+      "category": "marketing",
+      "provider": "WhatConverts",
+      "processor": "whatconverts",
+      "duration": "Varies",
+      "description": "Stores the WhatConverts visitor record used to attribute leads to their source."
+    },
+    {
+      "name": "wc_client_current",
+      "category": "marketing",
+      "provider": "WhatConverts",
+      "processor": "whatconverts",
+      "duration": "Varies",
+      "description": "Stores the traffic source of the current visit for lead attribution."
     }
   ],
   "sources": [
@@ -1203,7 +1227,10 @@
         "ksrndkehqnwntyxlhgto.com"
       ],
       "cookies": [
-        "wc_id"
+        "wc_id",
+        "wc_visitor",
+        "wc_client",
+        "wc_client_current"
       ]
     },
     {
