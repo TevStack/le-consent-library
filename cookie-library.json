@@ -1,320 +1,1698 @@
 {
-  "version": "2026.10.13",
+  "version": "2026.10.13.1",
   "cookies": [
-    { "name": "le_consent", "category": "necessary", "provider": "This site", "duration": "12 months", "description": "Stores your cookie consent choices." },
-    { "name": "cookieyes-consent", "category": "necessary", "provider": "This site", "duration": "1 year", "description": "Left over from a previous consent tool (CookieYes). Safe to remove once it is uninstalled." },
-    { "name": "CookieLawInfoConsent", "category": "necessary", "provider": "This site", "duration": "1 year", "description": "Left over from a previous consent tool (CookieYes / GDPR Cookie Consent)." },
-    { "name": "viewed_cookie_policy", "category": "necessary", "provider": "This site", "duration": "1 year", "description": "Left over from a previous consent tool (GDPR Cookie Consent)." },
-    { "name": "cookielawinfo-checkbox-*", "category": "necessary", "provider": "This site", "duration": "1 year", "description": "Left over from a previous consent tool (GDPR Cookie Consent)." },
-
-    { "name": "wordpress_logged_in_*", "category": "necessary", "provider": "WordPress", "duration": "Session", "description": "Keeps logged-in users signed in." },
-    { "name": "wordpress_sec_*", "category": "necessary", "provider": "WordPress", "duration": "Session", "description": "Secures the login session of logged-in users." },
-    { "name": "wordpress_test_cookie", "category": "necessary", "provider": "WordPress", "duration": "Session", "description": "Checks that the browser accepts cookies." },
-    { "name": "wp-settings-time-*", "category": "necessary", "provider": "WordPress", "duration": "1 year", "description": "Stores when a logged-in user's dashboard settings were saved." },
-    { "name": "wp-settings-*", "category": "necessary", "provider": "WordPress", "duration": "1 year", "description": "Stores a logged-in user's dashboard settings." },
-    { "name": "wp_lang", "category": "necessary", "provider": "WordPress", "duration": "Session", "description": "Remembers the language chosen on the login screen." },
-    { "name": "wp-postpass_*", "category": "necessary", "provider": "WordPress", "duration": "10 days", "description": "Remembers the password entered for a protected page." },
-    { "name": "comment_author_email_*", "category": "functional", "provider": "WordPress", "duration": "1 year", "description": "Remembers the email address of a commenter." },
-    { "name": "comment_author_url_*", "category": "functional", "provider": "WordPress", "duration": "1 year", "description": "Remembers the website of a commenter." },
-    { "name": "comment_author_*", "category": "functional", "provider": "WordPress", "duration": "1 year", "description": "Remembers the name of a commenter." },
-    { "name": "PHPSESSID", "category": "necessary", "provider": "This site", "duration": "Session", "description": "Keeps track of your session on the server." },
-
-    { "name": "woocommerce_cart_hash", "category": "necessary", "provider": "WooCommerce", "duration": "Session", "description": "Detects changes to the basket contents." },
-    { "name": "woocommerce_items_in_cart", "category": "necessary", "provider": "WooCommerce", "duration": "Session", "description": "Tells the shop whether the basket has items in it." },
-    { "name": "wp_woocommerce_session_*", "category": "necessary", "provider": "WooCommerce", "duration": "2 days", "description": "Links you to your basket and checkout details." },
-    { "name": "woocommerce_recently_viewed", "category": "functional", "provider": "WooCommerce", "duration": "Session", "description": "Powers the recently viewed products widget." },
-    { "name": "store_notice*", "category": "functional", "provider": "WooCommerce", "duration": "Session", "description": "Remembers that you dismissed the store notice." },
-    { "name": "sbjs_*", "category": "analytics", "provider": "WooCommerce", "duration": "Up to 6 months", "description": "Order attribution: records how you arrived at the shop (source, campaign) so sales can be attributed." },
-    { "name": "tk_ai", "category": "analytics", "provider": "Automattic", "duration": "Session", "description": "Jetpack / WooCommerce analytics visitor identifier." },
-    { "name": "tk_qs", "category": "analytics", "provider": "Automattic", "duration": "30 minutes", "description": "Jetpack / WooCommerce analytics event queue." },
-    { "name": "tk_or", "category": "analytics", "provider": "Automattic", "duration": "5 years", "description": "Jetpack / WooCommerce analytics referral tracking." },
-    { "name": "tk_lr", "category": "analytics", "provider": "Automattic", "duration": "1 year", "description": "Jetpack / WooCommerce analytics referral tracking." },
-    { "name": "tk_r3d", "category": "analytics", "provider": "Automattic", "duration": "3 days", "description": "Jetpack / WooCommerce analytics referral tracking." },
-
-    { "name": "pll_language", "category": "functional", "provider": "Polylang", "duration": "1 year", "description": "Remembers the language you chose." },
-    { "name": "wp-wpml_current_language", "category": "functional", "provider": "WPML", "duration": "Session", "description": "Remembers the current language." },
-    { "name": "_icl_visitor_lang_js", "category": "functional", "provider": "WPML", "duration": "1 day", "description": "Stores the language your browser redirected you to." },
-    { "name": "wpml_browser_redirect_test", "category": "functional", "provider": "WPML", "duration": "Session", "description": "Checks cookies are enabled for the language redirect." },
-
-    { "name": "_ga", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "2 years", "description": "Distinguishes unique users." },
-    { "name": "_ga_*", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "2 years", "description": "Persists session state." },
-    { "name": "_gid", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "1 day", "description": "Distinguishes users." },
-    { "name": "_gat_*", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "1 minute", "description": "Throttles the request rate." },
-    { "name": "_gat", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "1 minute", "description": "Throttles the request rate." },
-    { "name": "_dc_gtm_*", "category": "analytics", "provider": "Google Tag Manager", "processor": "google", "duration": "1 minute", "description": "Throttles the request rate of Google Analytics loaded through Tag Manager." },
-    { "name": "__utma", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "2 years", "description": "Legacy Google Analytics: distinguishes users and sessions." },
-    { "name": "__utmb", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "30 minutes", "description": "Legacy Google Analytics: determines new sessions." },
-    { "name": "__utmc", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "Session", "description": "Legacy Google Analytics: session tracking." },
-    { "name": "__utmt", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "10 minutes", "description": "Legacy Google Analytics: throttles the request rate." },
-    { "name": "__utmz", "category": "analytics", "provider": "Google Analytics", "processor": "google", "duration": "6 months", "description": "Legacy Google Analytics: stores the traffic source." },
-
-    { "name": "_gcl_au", "category": "marketing", "provider": "Google Ads", "processor": "google", "duration": "3 months", "description": "Stores conversion information for ad clicks." },
-    { "name": "_gcl_aw", "category": "marketing", "provider": "Google Ads", "processor": "google", "duration": "3 months", "description": "Stores the ad click identifier used for conversion tracking." },
-    { "name": "_gcl_dc", "category": "marketing", "provider": "Google Ads", "processor": "google", "duration": "3 months", "description": "Stores Display & Video ad click information." },
-    { "name": "_gcl_gb", "category": "marketing", "provider": "Google Ads", "processor": "google", "duration": "3 months", "description": "Stores ad click information when ads data redaction is active." },
-    { "name": "IDE", "category": "marketing", "provider": "Google (DoubleClick)", "processor": "google", "duration": "13 months", "description": "Used to show and measure relevant ads across sites." },
-    { "name": "test_cookie", "category": "marketing", "provider": "Google (DoubleClick)", "processor": "google", "duration": "15 minutes", "description": "Checks whether the browser supports cookies." },
-    { "name": "DSID", "category": "marketing", "provider": "Google (DoubleClick)", "processor": "google", "duration": "2 weeks", "description": "Links ad activity across devices for signed-in Google users." },
-    { "name": "__gads", "category": "marketing", "provider": "Google AdSense", "processor": "google", "duration": "13 months", "description": "Measures ad interactions and frequency." },
-    { "name": "__gpi", "category": "marketing", "provider": "Google AdSense", "processor": "google", "duration": "13 months", "description": "Collects information about ad interactions." },
-    { "name": "__eoi", "category": "marketing", "provider": "Google AdSense", "processor": "google", "duration": "6 months", "description": "Used for ad security and fraud prevention." },
-    { "name": "NID", "category": "marketing", "provider": "Google", "processor": "google", "duration": "6 months", "description": "Stores preferences and information used to personalise Google ads and services." },
-    { "name": "_GRECAPTCHA", "category": "necessary", "provider": "Google reCAPTCHA", "processor": "google", "duration": "6 months", "description": "Protects forms from spam and abuse." },
-
-    { "name": "VISITOR_INFO1_LIVE", "category": "marketing", "provider": "YouTube", "processor": "google", "duration": "6 months", "description": "Estimates your bandwidth for embedded videos and stores preferences." },
-    { "name": "VISITOR_PRIVACY_METADATA", "category": "marketing", "provider": "YouTube", "processor": "google", "duration": "6 months", "description": "Stores your cookie consent state for YouTube." },
-    { "name": "YSC", "category": "marketing", "provider": "YouTube", "processor": "google", "duration": "Session", "description": "Tracks views of embedded videos." },
-    { "name": "PREF", "category": "marketing", "provider": "YouTube", "processor": "google", "duration": "8 months", "description": "Stores YouTube player preferences." },
-    { "name": "__Secure-YEC", "category": "marketing", "provider": "YouTube", "processor": "google", "duration": "13 months", "description": "Stores YouTube settings and detects abuse." },
-    { "name": "vuid", "category": "analytics", "provider": "Vimeo", "processor": "vimeo", "duration": "2 years", "description": "Collects analytics about embedded Vimeo video views." },
-
-    { "name": "_fbp", "category": "marketing", "provider": "Meta (Facebook)", "processor": "meta", "duration": "3 months", "description": "Used by the Meta Pixel to deliver and measure ads." },
-    { "name": "_fbc", "category": "marketing", "provider": "Meta (Facebook)", "processor": "meta", "duration": "3 months", "description": "Stores the last Facebook ad click identifier." },
-    { "name": "fr", "category": "marketing", "provider": "Meta (Facebook)", "processor": "meta", "duration": "3 months", "description": "Used to deliver, measure and improve the relevance of ads." },
-
-    { "name": "_hjSessionUser_*", "category": "analytics", "provider": "Hotjar", "processor": "hotjar", "duration": "1 year", "description": "Identifies a returning Hotjar visitor." },
-    { "name": "_hjSession_*", "category": "analytics", "provider": "Hotjar", "processor": "hotjar", "duration": "30 minutes", "description": "Holds the current Hotjar session data." },
-    { "name": "_hj*", "category": "analytics", "provider": "Hotjar", "processor": "hotjar", "duration": "Up to 1 year", "description": "Hotjar behaviour analytics (heatmaps and recordings)." },
-
-    { "name": "_clck", "category": "analytics", "provider": "Microsoft Clarity", "processor": "microsoft", "duration": "1 year", "description": "Persists the Clarity user ID and preferences." },
-    { "name": "_clsk", "category": "analytics", "provider": "Microsoft Clarity", "processor": "microsoft", "duration": "1 day", "description": "Joins page views into a single Clarity session recording." },
-    { "name": "CLID", "category": "analytics", "provider": "Microsoft Clarity", "processor": "microsoft", "duration": "1 year", "description": "Identifies the first time Clarity saw this user." },
-    { "name": "ANONCHK", "category": "marketing", "provider": "Microsoft", "processor": "microsoft", "duration": "10 minutes", "description": "Checks whether the MUID is sent to Microsoft Advertising." },
-    { "name": "MUID", "category": "marketing", "provider": "Microsoft", "processor": "microsoft", "duration": "13 months", "description": "Identifies unique browsers visiting Microsoft sites and ads." },
-    { "name": "_uetsid", "category": "marketing", "provider": "Microsoft Advertising", "processor": "microsoft", "duration": "1 day", "description": "Microsoft Ads conversion tracking (session)." },
-    { "name": "_uetvid", "category": "marketing", "provider": "Microsoft Advertising", "processor": "microsoft", "duration": "13 months", "description": "Microsoft Ads conversion tracking (visitor)." },
-
-    { "name": "li_sugr", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "3 months", "description": "Browser identifier used by the LinkedIn Insight Tag." },
-    { "name": "bcookie", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "1 year", "description": "Browser identifier set by LinkedIn embeds and ads." },
-    { "name": "bscookie", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "1 year", "description": "Secure browser identifier set by LinkedIn." },
-    { "name": "lidc", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "1 day", "description": "Used by LinkedIn for routing." },
-    { "name": "UserMatchHistory", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "30 days", "description": "Syncs LinkedIn Ads IDs." },
-    { "name": "AnalyticsSyncHistory", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "30 days", "description": "Stores when the LinkedIn Insight Tag last synced." },
-    { "name": "li_fat_id", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "30 days", "description": "Stores the LinkedIn ad click identifier for conversions." },
-    { "name": "li_gc", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "6 months", "description": "Stores LinkedIn cookie consent for non-essential cookies." },
-    { "name": "ln_or", "category": "marketing", "provider": "LinkedIn", "processor": "linkedin", "duration": "1 day", "description": "Determines whether LinkedIn Insight Tag analytics run." },
-
-    { "name": "_ttp", "category": "marketing", "provider": "TikTok", "processor": "tiktok", "duration": "13 months", "description": "Measures and improves the TikTok ads you see." },
-    { "name": "_tt_enable_cookie", "category": "marketing", "provider": "TikTok", "processor": "tiktok", "duration": "13 months", "description": "Checks whether cookies can be set for the TikTok Pixel." },
-    { "name": "ttcsid*", "category": "marketing", "provider": "TikTok", "processor": "tiktok", "duration": "13 months", "description": "TikTok Pixel session identifier." },
-
-    { "name": "_pinterest_ct_ua", "category": "marketing", "provider": "Pinterest", "processor": "pinterest", "duration": "1 year", "description": "Pinterest conversion tracking." },
-    { "name": "_pin_unauth", "category": "marketing", "provider": "Pinterest", "processor": "pinterest", "duration": "1 year", "description": "Groups actions of users not signed in to Pinterest." },
-    { "name": "_derived_epik", "category": "marketing", "provider": "Pinterest", "processor": "pinterest", "duration": "1 year", "description": "Pinterest Tag conversion tracking." },
-    { "name": "_epik", "category": "marketing", "provider": "Pinterest", "processor": "pinterest", "duration": "1 year", "description": "Pinterest Tag conversion tracking." },
-
-    { "name": "personalization_id", "category": "marketing", "provider": "X (Twitter)", "processor": "x", "duration": "13 months", "description": "Tracks activity for X ads and embedded posts." },
-    { "name": "muc_ads", "category": "marketing", "provider": "X (Twitter)", "processor": "x", "duration": "13 months", "description": "X advertising identifier." },
-    { "name": "guest_id*", "category": "marketing", "provider": "X (Twitter)", "processor": "x", "duration": "13 months", "description": "Identifies visitors who are not signed in to X." },
-
-    { "name": "_scid", "category": "marketing", "provider": "Snapchat", "processor": "snapchat", "duration": "13 months", "description": "Snap Pixel visitor identifier." },
-    { "name": "_scid_r", "category": "marketing", "provider": "Snapchat", "processor": "snapchat", "duration": "13 months", "description": "Snap Pixel visitor identifier." },
-    { "name": "_rdt_uuid", "category": "marketing", "provider": "Reddit", "processor": "reddit", "duration": "3 months", "description": "Reddit Pixel conversion tracking." },
-    { "name": "__kla_id", "category": "marketing", "provider": "Klaviyo", "processor": "klaviyo", "duration": "2 years", "description": "Tracks visitor activity for Klaviyo email marketing." },
-
-    { "name": "__hstc", "category": "marketing", "provider": "HubSpot", "processor": "hubspot", "duration": "6 months", "description": "Main HubSpot visitor tracking cookie." },
-    { "name": "hubspotutk", "category": "marketing", "provider": "HubSpot", "processor": "hubspot", "duration": "6 months", "description": "Identifies a visitor and links form submissions to them." },
-    { "name": "__hssc", "category": "analytics", "provider": "HubSpot", "processor": "hubspot", "duration": "30 minutes", "description": "Tracks HubSpot sessions." },
-    { "name": "__hssrc", "category": "analytics", "provider": "HubSpot", "processor": "hubspot", "duration": "Session", "description": "Determines whether the browser has restarted." },
-    { "name": "messagesUtk", "category": "functional", "provider": "HubSpot", "processor": "hubspot", "duration": "6 months", "description": "Recognises visitors who chat via HubSpot live chat." },
-
-    { "name": "intercom-id-*", "category": "functional", "provider": "Intercom", "processor": "intercom", "duration": "9 months", "description": "Anonymous visitor identifier for Intercom chat." },
-    { "name": "intercom-session-*", "category": "functional", "provider": "Intercom", "processor": "intercom", "duration": "7 days", "description": "Keeps your Intercom chat session open." },
-    { "name": "intercom-device-id-*", "category": "functional", "provider": "Intercom", "processor": "intercom", "duration": "9 months", "description": "Device identifier for Intercom chat." },
-    { "name": "TawkConnectionTime", "category": "functional", "provider": "Tawk.to", "processor": "tawk", "duration": "Session", "description": "Tawk.to live chat connection time." },
-    { "name": "twk_idm_key", "category": "functional", "provider": "Tawk.to", "processor": "tawk", "duration": "Session", "description": "Keeps the Tawk.to chat working when you change pages." },
-    { "name": "__tawkuuid", "category": "functional", "provider": "Tawk.to", "processor": "tawk", "duration": "6 months", "description": "Recognises returning Tawk.to chat visitors." },
-    { "name": "twk_uuid_*", "category": "functional", "provider": "Tawk.to", "processor": "tawk", "duration": "6 months", "description": "Recognises returning Tawk.to chat visitors." },
-    { "name": "crisp-client*", "category": "functional", "provider": "Crisp", "processor": "crisp", "duration": "6 months", "description": "Keeps the Crisp chat session working." },
-    { "name": "__zlcmid", "category": "functional", "provider": "Zendesk", "processor": "zendesk", "duration": "1 year", "description": "Stores the Zendesk chat visitor ID." },
-
-    { "name": "_pk_id.*", "category": "analytics", "provider": "Matomo", "processor": "matomo", "duration": "13 months", "description": "Stores a unique visitor ID for Matomo analytics." },
-    { "name": "_pk_ses.*", "category": "analytics", "provider": "Matomo", "processor": "matomo", "duration": "30 minutes", "description": "Matomo session cookie." },
-
-    { "name": "__cf_bm", "category": "necessary", "provider": "Cloudflare", "processor": "cloudflare", "duration": "30 minutes", "description": "Distinguishes humans from bots to protect the site." },
-    { "name": "_cfuvid", "category": "necessary", "provider": "Cloudflare", "processor": "cloudflare", "duration": "Session", "description": "Rate limiting to protect the site." },
-    { "name": "cf_clearance", "category": "necessary", "provider": "Cloudflare", "processor": "cloudflare", "duration": "1 year", "description": "Shows you passed a Cloudflare security challenge." },
-    { "name": "__cflb", "category": "necessary", "provider": "Cloudflare", "processor": "cloudflare", "duration": "1 day", "description": "Load balancing." },
-
-    { "name": "__stripe_mid", "category": "necessary", "provider": "Stripe", "processor": "stripe", "duration": "1 year", "description": "Fraud prevention for card payments." },
-    { "name": "__stripe_sid", "category": "necessary", "provider": "Stripe", "processor": "stripe", "duration": "30 minutes", "description": "Fraud prevention for card payments." },
-    { "name": "ts_c", "category": "necessary", "provider": "PayPal", "processor": "paypal", "duration": "3 years", "description": "Fraud prevention for PayPal payments." },
-    { "name": "tsrce", "category": "necessary", "provider": "PayPal", "processor": "paypal", "duration": "3 days", "description": "Used by PayPal to process payments." },
-    { "name": "x-pp-s", "category": "necessary", "provider": "PayPal", "processor": "paypal", "duration": "Session", "description": "Used by PayPal to process payments." },
-    { "name": "nsid", "category": "necessary", "provider": "PayPal", "processor": "paypal", "duration": "Session", "description": "PayPal session identifier." },
-    { "name": "l7_az", "category": "necessary", "provider": "PayPal", "processor": "paypal", "duration": "30 minutes", "description": "PayPal routing for payments." }
+    {
+      "name": "le_consent",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "12 months",
+      "description": "Stores your cookie consent choices."
+    },
+    {
+      "name": "cookieyes-consent",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "1 year",
+      "description": "Left over from a previous consent tool (CookieYes). Safe to remove once it is uninstalled."
+    },
+    {
+      "name": "CookieLawInfoConsent",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "1 year",
+      "description": "Left over from a previous consent tool (CookieYes / GDPR Cookie Consent)."
+    },
+    {
+      "name": "viewed_cookie_policy",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "1 year",
+      "description": "Left over from a previous consent tool (GDPR Cookie Consent)."
+    },
+    {
+      "name": "cookielawinfo-checkbox-*",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "1 year",
+      "description": "Left over from a previous consent tool (GDPR Cookie Consent)."
+    },
+    {
+      "name": "wordpress_logged_in_*",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "Session",
+      "description": "Keeps logged-in users signed in."
+    },
+    {
+      "name": "wordpress_sec_*",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "Session",
+      "description": "Secures the login session of logged-in users."
+    },
+    {
+      "name": "wordpress_test_cookie",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "Session",
+      "description": "Checks that the browser accepts cookies."
+    },
+    {
+      "name": "wp-settings-time-*",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "1 year",
+      "description": "Stores when a logged-in user's dashboard settings were saved."
+    },
+    {
+      "name": "wp-settings-*",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "1 year",
+      "description": "Stores a logged-in user's dashboard settings."
+    },
+    {
+      "name": "wp_lang",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "Session",
+      "description": "Remembers the language chosen on the login screen."
+    },
+    {
+      "name": "wp-postpass_*",
+      "category": "necessary",
+      "provider": "WordPress",
+      "duration": "10 days",
+      "description": "Remembers the password entered for a protected page."
+    },
+    {
+      "name": "comment_author_email_*",
+      "category": "functional",
+      "provider": "WordPress",
+      "duration": "1 year",
+      "description": "Remembers the email address of a commenter."
+    },
+    {
+      "name": "comment_author_url_*",
+      "category": "functional",
+      "provider": "WordPress",
+      "duration": "1 year",
+      "description": "Remembers the website of a commenter."
+    },
+    {
+      "name": "comment_author_*",
+      "category": "functional",
+      "provider": "WordPress",
+      "duration": "1 year",
+      "description": "Remembers the name of a commenter."
+    },
+    {
+      "name": "PHPSESSID",
+      "category": "necessary",
+      "provider": "This site",
+      "duration": "Session",
+      "description": "Keeps track of your session on the server."
+    },
+    {
+      "name": "woocommerce_cart_hash",
+      "category": "necessary",
+      "provider": "WooCommerce",
+      "duration": "Session",
+      "description": "Detects changes to the basket contents."
+    },
+    {
+      "name": "woocommerce_items_in_cart",
+      "category": "necessary",
+      "provider": "WooCommerce",
+      "duration": "Session",
+      "description": "Tells the shop whether the basket has items in it."
+    },
+    {
+      "name": "wp_woocommerce_session_*",
+      "category": "necessary",
+      "provider": "WooCommerce",
+      "duration": "2 days",
+      "description": "Links you to your basket and checkout details."
+    },
+    {
+      "name": "woocommerce_recently_viewed",
+      "category": "functional",
+      "provider": "WooCommerce",
+      "duration": "Session",
+      "description": "Powers the recently viewed products widget."
+    },
+    {
+      "name": "store_notice*",
+      "category": "functional",
+      "provider": "WooCommerce",
+      "duration": "Session",
+      "description": "Remembers that you dismissed the store notice."
+    },
+    {
+      "name": "sbjs_*",
+      "category": "analytics",
+      "provider": "WooCommerce",
+      "duration": "Up to 6 months",
+      "description": "Order attribution: records how you arrived at the shop (source, campaign) so sales can be attributed."
+    },
+    {
+      "name": "tk_ai",
+      "category": "analytics",
+      "provider": "Automattic",
+      "duration": "Session",
+      "description": "Jetpack / WooCommerce analytics visitor identifier."
+    },
+    {
+      "name": "tk_qs",
+      "category": "analytics",
+      "provider": "Automattic",
+      "duration": "30 minutes",
+      "description": "Jetpack / WooCommerce analytics event queue."
+    },
+    {
+      "name": "tk_or",
+      "category": "analytics",
+      "provider": "Automattic",
+      "duration": "5 years",
+      "description": "Jetpack / WooCommerce analytics referral tracking."
+    },
+    {
+      "name": "tk_lr",
+      "category": "analytics",
+      "provider": "Automattic",
+      "duration": "1 year",
+      "description": "Jetpack / WooCommerce analytics referral tracking."
+    },
+    {
+      "name": "tk_r3d",
+      "category": "analytics",
+      "provider": "Automattic",
+      "duration": "3 days",
+      "description": "Jetpack / WooCommerce analytics referral tracking."
+    },
+    {
+      "name": "pll_language",
+      "category": "functional",
+      "provider": "Polylang",
+      "duration": "1 year",
+      "description": "Remembers the language you chose."
+    },
+    {
+      "name": "wp-wpml_current_language",
+      "category": "functional",
+      "provider": "WPML",
+      "duration": "Session",
+      "description": "Remembers the current language."
+    },
+    {
+      "name": "_icl_visitor_lang_js",
+      "category": "functional",
+      "provider": "WPML",
+      "duration": "1 day",
+      "description": "Stores the language your browser redirected you to."
+    },
+    {
+      "name": "wpml_browser_redirect_test",
+      "category": "functional",
+      "provider": "WPML",
+      "duration": "Session",
+      "description": "Checks cookies are enabled for the language redirect."
+    },
+    {
+      "name": "_ga",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "2 years",
+      "description": "Distinguishes unique users."
+    },
+    {
+      "name": "_ga_*",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "2 years",
+      "description": "Persists session state."
+    },
+    {
+      "name": "_gid",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "1 day",
+      "description": "Distinguishes users."
+    },
+    {
+      "name": "_gat_*",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "1 minute",
+      "description": "Throttles the request rate."
+    },
+    {
+      "name": "_gat",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "1 minute",
+      "description": "Throttles the request rate."
+    },
+    {
+      "name": "_dc_gtm_*",
+      "category": "analytics",
+      "provider": "Google Tag Manager",
+      "processor": "google",
+      "duration": "1 minute",
+      "description": "Throttles the request rate of Google Analytics loaded through Tag Manager."
+    },
+    {
+      "name": "__utma",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "2 years",
+      "description": "Legacy Google Analytics: distinguishes users and sessions."
+    },
+    {
+      "name": "__utmb",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "30 minutes",
+      "description": "Legacy Google Analytics: determines new sessions."
+    },
+    {
+      "name": "__utmc",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "Session",
+      "description": "Legacy Google Analytics: session tracking."
+    },
+    {
+      "name": "__utmt",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "10 minutes",
+      "description": "Legacy Google Analytics: throttles the request rate."
+    },
+    {
+      "name": "__utmz",
+      "category": "analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Legacy Google Analytics: stores the traffic source."
+    },
+    {
+      "name": "_gcl_au",
+      "category": "marketing",
+      "provider": "Google Ads",
+      "processor": "google",
+      "duration": "3 months",
+      "description": "Stores conversion information for ad clicks."
+    },
+    {
+      "name": "_gcl_aw",
+      "category": "marketing",
+      "provider": "Google Ads",
+      "processor": "google",
+      "duration": "3 months",
+      "description": "Stores the ad click identifier used for conversion tracking."
+    },
+    {
+      "name": "_gcl_dc",
+      "category": "marketing",
+      "provider": "Google Ads",
+      "processor": "google",
+      "duration": "3 months",
+      "description": "Stores Display & Video ad click information."
+    },
+    {
+      "name": "_gcl_gb",
+      "category": "marketing",
+      "provider": "Google Ads",
+      "processor": "google",
+      "duration": "3 months",
+      "description": "Stores ad click information when ads data redaction is active."
+    },
+    {
+      "name": "IDE",
+      "category": "marketing",
+      "provider": "Google (DoubleClick)",
+      "processor": "google",
+      "duration": "13 months",
+      "description": "Used to show and measure relevant ads across sites."
+    },
+    {
+      "name": "test_cookie",
+      "category": "marketing",
+      "provider": "Google (DoubleClick)",
+      "processor": "google",
+      "duration": "15 minutes",
+      "description": "Checks whether the browser supports cookies."
+    },
+    {
+      "name": "DSID",
+      "category": "marketing",
+      "provider": "Google (DoubleClick)",
+      "processor": "google",
+      "duration": "2 weeks",
+      "description": "Links ad activity across devices for signed-in Google users."
+    },
+    {
+      "name": "__gads",
+      "category": "marketing",
+      "provider": "Google AdSense",
+      "processor": "google",
+      "duration": "13 months",
+      "description": "Measures ad interactions and frequency."
+    },
+    {
+      "name": "__gpi",
+      "category": "marketing",
+      "provider": "Google AdSense",
+      "processor": "google",
+      "duration": "13 months",
+      "description": "Collects information about ad interactions."
+    },
+    {
+      "name": "__eoi",
+      "category": "marketing",
+      "provider": "Google AdSense",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Used for ad security and fraud prevention."
+    },
+    {
+      "name": "NID",
+      "category": "marketing",
+      "provider": "Google",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Stores preferences and information used to personalise Google ads and services."
+    },
+    {
+      "name": "_GRECAPTCHA",
+      "category": "necessary",
+      "provider": "Google reCAPTCHA",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Protects forms from spam and abuse."
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "category": "marketing",
+      "provider": "YouTube",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Estimates your bandwidth for embedded videos and stores preferences."
+    },
+    {
+      "name": "VISITOR_PRIVACY_METADATA",
+      "category": "marketing",
+      "provider": "YouTube",
+      "processor": "google",
+      "duration": "6 months",
+      "description": "Stores your cookie consent state for YouTube."
+    },
+    {
+      "name": "YSC",
+      "category": "marketing",
+      "provider": "YouTube",
+      "processor": "google",
+      "duration": "Session",
+      "description": "Tracks views of embedded videos."
+    },
+    {
+      "name": "PREF",
+      "category": "marketing",
+      "provider": "YouTube",
+      "processor": "google",
+      "duration": "8 months",
+      "description": "Stores YouTube player preferences."
+    },
+    {
+      "name": "__Secure-YEC",
+      "category": "marketing",
+      "provider": "YouTube",
+      "processor": "google",
+      "duration": "13 months",
+      "description": "Stores YouTube settings and detects abuse."
+    },
+    {
+      "name": "vuid",
+      "category": "analytics",
+      "provider": "Vimeo",
+      "processor": "vimeo",
+      "duration": "2 years",
+      "description": "Collects analytics about embedded Vimeo video views."
+    },
+    {
+      "name": "_fbp",
+      "category": "marketing",
+      "provider": "Meta (Facebook)",
+      "processor": "meta",
+      "duration": "3 months",
+      "description": "Used by the Meta Pixel to deliver and measure ads."
+    },
+    {
+      "name": "_fbc",
+      "category": "marketing",
+      "provider": "Meta (Facebook)",
+      "processor": "meta",
+      "duration": "3 months",
+      "description": "Stores the last Facebook ad click identifier."
+    },
+    {
+      "name": "fr",
+      "category": "marketing",
+      "provider": "Meta (Facebook)",
+      "processor": "meta",
+      "duration": "3 months",
+      "description": "Used to deliver, measure and improve the relevance of ads."
+    },
+    {
+      "name": "_hjSessionUser_*",
+      "category": "analytics",
+      "provider": "Hotjar",
+      "processor": "hotjar",
+      "duration": "1 year",
+      "description": "Identifies a returning Hotjar visitor."
+    },
+    {
+      "name": "_hjSession_*",
+      "category": "analytics",
+      "provider": "Hotjar",
+      "processor": "hotjar",
+      "duration": "30 minutes",
+      "description": "Holds the current Hotjar session data."
+    },
+    {
+      "name": "_hj*",
+      "category": "analytics",
+      "provider": "Hotjar",
+      "processor": "hotjar",
+      "duration": "Up to 1 year",
+      "description": "Hotjar behaviour analytics (heatmaps and recordings)."
+    },
+    {
+      "name": "_clck",
+      "category": "analytics",
+      "provider": "Microsoft Clarity",
+      "processor": "microsoft",
+      "duration": "1 year",
+      "description": "Persists the Clarity user ID and preferences."
+    },
+    {
+      "name": "_clsk",
+      "category": "analytics",
+      "provider": "Microsoft Clarity",
+      "processor": "microsoft",
+      "duration": "1 day",
+      "description": "Joins page views into a single Clarity session recording."
+    },
+    {
+      "name": "CLID",
+      "category": "analytics",
+      "provider": "Microsoft Clarity",
+      "processor": "microsoft",
+      "duration": "1 year",
+      "description": "Identifies the first time Clarity saw this user."
+    },
+    {
+      "name": "ANONCHK",
+      "category": "marketing",
+      "provider": "Microsoft",
+      "processor": "microsoft",
+      "duration": "10 minutes",
+      "description": "Checks whether the MUID is sent to Microsoft Advertising."
+    },
+    {
+      "name": "MUID",
+      "category": "marketing",
+      "provider": "Microsoft",
+      "processor": "microsoft",
+      "duration": "13 months",
+      "description": "Identifies unique browsers visiting Microsoft sites and ads."
+    },
+    {
+      "name": "_uetsid",
+      "category": "marketing",
+      "provider": "Microsoft Advertising",
+      "processor": "microsoft",
+      "duration": "1 day",
+      "description": "Microsoft Ads conversion tracking (session)."
+    },
+    {
+      "name": "_uetvid",
+      "category": "marketing",
+      "provider": "Microsoft Advertising",
+      "processor": "microsoft",
+      "duration": "13 months",
+      "description": "Microsoft Ads conversion tracking (visitor)."
+    },
+    {
+      "name": "li_sugr",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "3 months",
+      "description": "Browser identifier used by the LinkedIn Insight Tag."
+    },
+    {
+      "name": "bcookie",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "1 year",
+      "description": "Browser identifier set by LinkedIn embeds and ads."
+    },
+    {
+      "name": "bscookie",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "1 year",
+      "description": "Secure browser identifier set by LinkedIn."
+    },
+    {
+      "name": "lidc",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "1 day",
+      "description": "Used by LinkedIn for routing."
+    },
+    {
+      "name": "UserMatchHistory",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "30 days",
+      "description": "Syncs LinkedIn Ads IDs."
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "30 days",
+      "description": "Stores when the LinkedIn Insight Tag last synced."
+    },
+    {
+      "name": "li_fat_id",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "30 days",
+      "description": "Stores the LinkedIn ad click identifier for conversions."
+    },
+    {
+      "name": "li_gc",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "6 months",
+      "description": "Stores LinkedIn cookie consent for non-essential cookies."
+    },
+    {
+      "name": "ln_or",
+      "category": "marketing",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "duration": "1 day",
+      "description": "Determines whether LinkedIn Insight Tag analytics run."
+    },
+    {
+      "name": "_ttp",
+      "category": "marketing",
+      "provider": "TikTok",
+      "processor": "tiktok",
+      "duration": "13 months",
+      "description": "Measures and improves the TikTok ads you see."
+    },
+    {
+      "name": "_tt_enable_cookie",
+      "category": "marketing",
+      "provider": "TikTok",
+      "processor": "tiktok",
+      "duration": "13 months",
+      "description": "Checks whether cookies can be set for the TikTok Pixel."
+    },
+    {
+      "name": "ttcsid*",
+      "category": "marketing",
+      "provider": "TikTok",
+      "processor": "tiktok",
+      "duration": "13 months",
+      "description": "TikTok Pixel session identifier."
+    },
+    {
+      "name": "_pinterest_ct_ua",
+      "category": "marketing",
+      "provider": "Pinterest",
+      "processor": "pinterest",
+      "duration": "1 year",
+      "description": "Pinterest conversion tracking."
+    },
+    {
+      "name": "_pin_unauth",
+      "category": "marketing",
+      "provider": "Pinterest",
+      "processor": "pinterest",
+      "duration": "1 year",
+      "description": "Groups actions of users not signed in to Pinterest."
+    },
+    {
+      "name": "_derived_epik",
+      "category": "marketing",
+      "provider": "Pinterest",
+      "processor": "pinterest",
+      "duration": "1 year",
+      "description": "Pinterest Tag conversion tracking."
+    },
+    {
+      "name": "_epik",
+      "category": "marketing",
+      "provider": "Pinterest",
+      "processor": "pinterest",
+      "duration": "1 year",
+      "description": "Pinterest Tag conversion tracking."
+    },
+    {
+      "name": "personalization_id",
+      "category": "marketing",
+      "provider": "X (Twitter)",
+      "processor": "x",
+      "duration": "13 months",
+      "description": "Tracks activity for X ads and embedded posts."
+    },
+    {
+      "name": "muc_ads",
+      "category": "marketing",
+      "provider": "X (Twitter)",
+      "processor": "x",
+      "duration": "13 months",
+      "description": "X advertising identifier."
+    },
+    {
+      "name": "guest_id*",
+      "category": "marketing",
+      "provider": "X (Twitter)",
+      "processor": "x",
+      "duration": "13 months",
+      "description": "Identifies visitors who are not signed in to X."
+    },
+    {
+      "name": "_scid",
+      "category": "marketing",
+      "provider": "Snapchat",
+      "processor": "snapchat",
+      "duration": "13 months",
+      "description": "Snap Pixel visitor identifier."
+    },
+    {
+      "name": "_scid_r",
+      "category": "marketing",
+      "provider": "Snapchat",
+      "processor": "snapchat",
+      "duration": "13 months",
+      "description": "Snap Pixel visitor identifier."
+    },
+    {
+      "name": "_rdt_uuid",
+      "category": "marketing",
+      "provider": "Reddit",
+      "processor": "reddit",
+      "duration": "3 months",
+      "description": "Reddit Pixel conversion tracking."
+    },
+    {
+      "name": "__kla_id",
+      "category": "marketing",
+      "provider": "Klaviyo",
+      "processor": "klaviyo",
+      "duration": "2 years",
+      "description": "Tracks visitor activity for Klaviyo email marketing."
+    },
+    {
+      "name": "__hstc",
+      "category": "marketing",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "duration": "6 months",
+      "description": "Main HubSpot visitor tracking cookie."
+    },
+    {
+      "name": "hubspotutk",
+      "category": "marketing",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "duration": "6 months",
+      "description": "Identifies a visitor and links form submissions to them."
+    },
+    {
+      "name": "__hssc",
+      "category": "analytics",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "duration": "30 minutes",
+      "description": "Tracks HubSpot sessions."
+    },
+    {
+      "name": "__hssrc",
+      "category": "analytics",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "duration": "Session",
+      "description": "Determines whether the browser has restarted."
+    },
+    {
+      "name": "messagesUtk",
+      "category": "functional",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "duration": "6 months",
+      "description": "Recognises visitors who chat via HubSpot live chat."
+    },
+    {
+      "name": "intercom-id-*",
+      "category": "functional",
+      "provider": "Intercom",
+      "processor": "intercom",
+      "duration": "9 months",
+      "description": "Anonymous visitor identifier for Intercom chat."
+    },
+    {
+      "name": "intercom-session-*",
+      "category": "functional",
+      "provider": "Intercom",
+      "processor": "intercom",
+      "duration": "7 days",
+      "description": "Keeps your Intercom chat session open."
+    },
+    {
+      "name": "intercom-device-id-*",
+      "category": "functional",
+      "provider": "Intercom",
+      "processor": "intercom",
+      "duration": "9 months",
+      "description": "Device identifier for Intercom chat."
+    },
+    {
+      "name": "TawkConnectionTime",
+      "category": "functional",
+      "provider": "Tawk.to",
+      "processor": "tawk",
+      "duration": "Session",
+      "description": "Tawk.to live chat connection time."
+    },
+    {
+      "name": "twk_idm_key",
+      "category": "functional",
+      "provider": "Tawk.to",
+      "processor": "tawk",
+      "duration": "Session",
+      "description": "Keeps the Tawk.to chat working when you change pages."
+    },
+    {
+      "name": "__tawkuuid",
+      "category": "functional",
+      "provider": "Tawk.to",
+      "processor": "tawk",
+      "duration": "6 months",
+      "description": "Recognises returning Tawk.to chat visitors."
+    },
+    {
+      "name": "twk_uuid_*",
+      "category": "functional",
+      "provider": "Tawk.to",
+      "processor": "tawk",
+      "duration": "6 months",
+      "description": "Recognises returning Tawk.to chat visitors."
+    },
+    {
+      "name": "crisp-client*",
+      "category": "functional",
+      "provider": "Crisp",
+      "processor": "crisp",
+      "duration": "6 months",
+      "description": "Keeps the Crisp chat session working."
+    },
+    {
+      "name": "__zlcmid",
+      "category": "functional",
+      "provider": "Zendesk",
+      "processor": "zendesk",
+      "duration": "1 year",
+      "description": "Stores the Zendesk chat visitor ID."
+    },
+    {
+      "name": "_pk_id.*",
+      "category": "analytics",
+      "provider": "Matomo",
+      "processor": "matomo",
+      "duration": "13 months",
+      "description": "Stores a unique visitor ID for Matomo analytics."
+    },
+    {
+      "name": "_pk_ses.*",
+      "category": "analytics",
+      "provider": "Matomo",
+      "processor": "matomo",
+      "duration": "30 minutes",
+      "description": "Matomo session cookie."
+    },
+    {
+      "name": "__cf_bm",
+      "category": "necessary",
+      "provider": "Cloudflare",
+      "processor": "cloudflare",
+      "duration": "30 minutes",
+      "description": "Distinguishes humans from bots to protect the site."
+    },
+    {
+      "name": "_cfuvid",
+      "category": "necessary",
+      "provider": "Cloudflare",
+      "processor": "cloudflare",
+      "duration": "Session",
+      "description": "Rate limiting to protect the site."
+    },
+    {
+      "name": "cf_clearance",
+      "category": "necessary",
+      "provider": "Cloudflare",
+      "processor": "cloudflare",
+      "duration": "1 year",
+      "description": "Shows you passed a Cloudflare security challenge."
+    },
+    {
+      "name": "__cflb",
+      "category": "necessary",
+      "provider": "Cloudflare",
+      "processor": "cloudflare",
+      "duration": "1 day",
+      "description": "Load balancing."
+    },
+    {
+      "name": "__stripe_mid",
+      "category": "necessary",
+      "provider": "Stripe",
+      "processor": "stripe",
+      "duration": "1 year",
+      "description": "Fraud prevention for card payments."
+    },
+    {
+      "name": "__stripe_sid",
+      "category": "necessary",
+      "provider": "Stripe",
+      "processor": "stripe",
+      "duration": "30 minutes",
+      "description": "Fraud prevention for card payments."
+    },
+    {
+      "name": "ts_c",
+      "category": "necessary",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "duration": "3 years",
+      "description": "Fraud prevention for PayPal payments."
+    },
+    {
+      "name": "tsrce",
+      "category": "necessary",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "duration": "3 days",
+      "description": "Used by PayPal to process payments."
+    },
+    {
+      "name": "x-pp-s",
+      "category": "necessary",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "duration": "Session",
+      "description": "Used by PayPal to process payments."
+    },
+    {
+      "name": "nsid",
+      "category": "necessary",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "duration": "Session",
+      "description": "PayPal session identifier."
+    },
+    {
+      "name": "l7_az",
+      "category": "necessary",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "duration": "30 minutes",
+      "description": "PayPal routing for payments."
+    },
+    {
+      "name": "wc_id",
+      "category": "marketing",
+      "provider": "WhatConverts",
+      "processor": "whatconverts",
+      "duration": "Varies",
+      "description": "Identifies the visitor so calls, forms and chats can be attributed to the ad or search that brought them."
+    }
   ],
   "sources": [
-    { "id": "google-ads", "provider": "Google Ads", "processor": "google", "category": "marketing", "google": true,
-      "patterns": ["googletagmanager.com/gtag/js?id=AW-", "googleadservices.com", "googlesyndication.com", "doubleclick.net", "google.com/pagead"],
-      "inline": ["'AW-", "\"AW-", "googleadservices.com"],
-      "cookies": ["_gcl_au", "_gcl_aw", "IDE", "test_cookie"] },
-    { "id": "google-analytics", "provider": "Google Analytics", "processor": "google", "category": "analytics", "google": true,
-      "patterns": ["googletagmanager.com/gtag/js", "google-analytics.com/analytics.js", "google-analytics.com/ga.js", "google-analytics.com/g/collect"],
-      "inline": ["gtag(", "GoogleAnalyticsObject", "google-analytics.com/analytics.js", "_gaq.push"],
-      "cookies": ["_ga", "_ga_*", "_gid"] },
-    { "id": "google-tag-manager", "provider": "Google Tag Manager", "processor": "google", "category": "analytics", "gtm": true,
-      "patterns": ["googletagmanager.com/gtm.js", "googletagmanager.com/ns.html"],
-      "inline": ["googletagmanager.com/gtm.js"],
-      "cookies": [] },
-    { "id": "recaptcha", "provider": "Google reCAPTCHA", "processor": "google", "category": "necessary",
-      "patterns": ["google.com/recaptcha", "gstatic.com/recaptcha", "recaptcha.net"],
+    {
+      "id": "google-ads",
+      "provider": "Google Ads",
+      "processor": "google",
+      "category": "marketing",
+      "google": true,
+      "patterns": [
+        "googletagmanager.com/gtag/js?id=AW-",
+        "googleadservices.com",
+        "googlesyndication.com",
+        "doubleclick.net",
+        "google.com/pagead"
+      ],
+      "inline": [
+        "'AW-",
+        "\"AW-",
+        "googleadservices.com"
+      ],
+      "cookies": [
+        "_gcl_au",
+        "_gcl_aw",
+        "IDE",
+        "test_cookie"
+      ]
+    },
+    {
+      "id": "google-analytics",
+      "provider": "Google Analytics",
+      "processor": "google",
+      "category": "analytics",
+      "google": true,
+      "patterns": [
+        "googletagmanager.com/gtag/js",
+        "google-analytics.com/analytics.js",
+        "google-analytics.com/ga.js",
+        "google-analytics.com/g/collect"
+      ],
+      "inline": [
+        "gtag(",
+        "GoogleAnalyticsObject",
+        "google-analytics.com/analytics.js",
+        "_gaq.push"
+      ],
+      "cookies": [
+        "_ga",
+        "_ga_*",
+        "_gid"
+      ]
+    },
+    {
+      "id": "google-tag-manager",
+      "provider": "Google Tag Manager",
+      "processor": "google",
+      "category": "analytics",
+      "gtm": true,
+      "patterns": [
+        "googletagmanager.com/gtm.js",
+        "googletagmanager.com/ns.html"
+      ],
+      "inline": [
+        "googletagmanager.com/gtm.js"
+      ],
+      "cookies": []
+    },
+    {
+      "id": "recaptcha",
+      "provider": "Google reCAPTCHA",
+      "processor": "google",
+      "category": "necessary",
+      "patterns": [
+        "google.com/recaptcha",
+        "gstatic.com/recaptcha",
+        "recaptcha.net"
+      ],
       "inline": [],
-      "cookies": ["_GRECAPTCHA"] },
-    { "id": "youtube", "provider": "YouTube", "processor": "google", "category": "marketing", "embed": true,
-      "patterns": ["youtube.com/embed", "youtube-nocookie.com/embed", "youtube.com/iframe_api", "youtube.com/player_api"],
+      "cookies": [
+        "_GRECAPTCHA"
+      ]
+    },
+    {
+      "id": "youtube",
+      "provider": "YouTube",
+      "processor": "google",
+      "category": "marketing",
+      "embed": true,
+      "patterns": [
+        "youtube.com/embed",
+        "youtube-nocookie.com/embed",
+        "youtube.com/iframe_api",
+        "youtube.com/player_api"
+      ],
       "inline": [],
-      "cookies": ["VISITOR_INFO1_LIVE", "YSC", "VISITOR_PRIVACY_METADATA"] },
-    { "id": "google-maps", "provider": "Google Maps", "processor": "google", "category": "functional", "embed": true,
-      "patterns": ["google.com/maps", "maps.google.", "maps.googleapis.com"],
+      "cookies": [
+        "VISITOR_INFO1_LIVE",
+        "YSC",
+        "VISITOR_PRIVACY_METADATA"
+      ]
+    },
+    {
+      "id": "google-maps",
+      "provider": "Google Maps",
+      "processor": "google",
+      "category": "functional",
+      "embed": true,
+      "patterns": [
+        "google.com/maps",
+        "maps.google.",
+        "maps.googleapis.com"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "vimeo", "provider": "Vimeo", "processor": "vimeo", "category": "analytics", "embed": true,
-      "patterns": ["player.vimeo.com"],
+      "cookies": []
+    },
+    {
+      "id": "vimeo",
+      "provider": "Vimeo",
+      "processor": "vimeo",
+      "category": "analytics",
+      "embed": true,
+      "patterns": [
+        "player.vimeo.com"
+      ],
       "inline": [],
-      "cookies": ["vuid"] },
-    { "id": "meta-pixel", "provider": "Meta (Facebook)", "processor": "meta", "category": "marketing",
-      "patterns": ["connect.facebook.net", "facebook.com/tr"],
-      "inline": ["fbq(", "connect.facebook.net"],
-      "cookies": ["_fbp", "_fbc"] },
-    { "id": "facebook-embed", "provider": "Meta (Facebook)", "processor": "meta", "category": "marketing", "embed": true,
-      "patterns": ["facebook.com/plugins", "facebook.com/v2"],
+      "cookies": [
+        "vuid"
+      ]
+    },
+    {
+      "id": "meta-pixel",
+      "provider": "Meta (Facebook)",
+      "processor": "meta",
+      "category": "marketing",
+      "patterns": [
+        "connect.facebook.net",
+        "facebook.com/tr"
+      ],
+      "inline": [
+        "fbq(",
+        "connect.facebook.net"
+      ],
+      "cookies": [
+        "_fbp",
+        "_fbc"
+      ]
+    },
+    {
+      "id": "facebook-embed",
+      "provider": "Meta (Facebook)",
+      "processor": "meta",
+      "category": "marketing",
+      "embed": true,
+      "patterns": [
+        "facebook.com/plugins",
+        "facebook.com/v2"
+      ],
       "inline": [],
-      "cookies": ["fr"] },
-    { "id": "instagram-embed", "provider": "Instagram", "processor": "meta", "category": "marketing", "embed": true,
-      "patterns": ["instagram.com/embed", "instagram.com/p/"],
+      "cookies": [
+        "fr"
+      ]
+    },
+    {
+      "id": "instagram-embed",
+      "provider": "Instagram",
+      "processor": "meta",
+      "category": "marketing",
+      "embed": true,
+      "patterns": [
+        "instagram.com/embed",
+        "instagram.com/p/"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "hotjar", "provider": "Hotjar", "processor": "hotjar", "category": "analytics",
-      "patterns": ["static.hotjar.com", "script.hotjar.com"],
-      "inline": ["static.hotjar.com", "_hjSettings"],
-      "cookies": ["_hjSessionUser_*", "_hjSession_*"] },
-    { "id": "clarity", "provider": "Microsoft Clarity", "processor": "microsoft", "category": "analytics",
-      "patterns": ["clarity.ms"],
-      "inline": ["clarity.ms/tag"],
-      "cookies": ["_clck", "_clsk", "CLID", "MUID"] },
-    { "id": "bing-uet", "provider": "Microsoft Advertising", "processor": "microsoft", "category": "marketing",
-      "patterns": ["bat.bing.com"],
-      "inline": ["bat.bing.com", "uetq"],
-      "cookies": ["_uetsid", "_uetvid", "MUID"] },
-    { "id": "linkedin-insight", "provider": "LinkedIn", "processor": "linkedin", "category": "marketing",
-      "patterns": ["snap.licdn.com", "px.ads.linkedin.com", "platform.linkedin.com"],
-      "inline": ["_linkedin_partner_id", "snap.licdn.com"],
-      "cookies": ["li_sugr", "bcookie", "lidc", "UserMatchHistory", "AnalyticsSyncHistory"] },
-    { "id": "tiktok-pixel", "provider": "TikTok", "processor": "tiktok", "category": "marketing",
-      "patterns": ["analytics.tiktok.com"],
-      "inline": ["analytics.tiktok.com", "ttq.load"],
-      "cookies": ["_ttp", "_tt_enable_cookie"] },
-    { "id": "pinterest-tag", "provider": "Pinterest", "processor": "pinterest", "category": "marketing",
-      "patterns": ["s.pinimg.com/ct", "ct.pinterest.com"],
-      "inline": ["pintrk("],
-      "cookies": ["_pinterest_ct_ua", "_pin_unauth", "_epik"] },
-    { "id": "x-pixel", "provider": "X (Twitter)", "processor": "x", "category": "marketing",
-      "patterns": ["static.ads-twitter.com", "analytics.twitter.com", "platform.twitter.com"],
-      "inline": ["twq("],
-      "cookies": ["personalization_id", "muc_ads", "guest_id"] },
-    { "id": "snap-pixel", "provider": "Snapchat", "processor": "snapchat", "category": "marketing",
-      "patterns": ["sc-static.net/scevent"],
-      "inline": ["snaptr("],
-      "cookies": ["_scid"] },
-    { "id": "reddit-pixel", "provider": "Reddit", "processor": "reddit", "category": "marketing",
-      "patterns": ["redditstatic.com/ads"],
-      "inline": ["rdt('init'", "rdt(\"init\""],
-      "cookies": ["_rdt_uuid"] },
-    { "id": "klaviyo", "provider": "Klaviyo", "processor": "klaviyo", "category": "marketing",
-      "patterns": ["static.klaviyo.com", "static-tracking.klaviyo.com"],
-      "inline": ["klaviyo.com/onsite"],
-      "cookies": ["__kla_id"] },
-    { "id": "hubspot-tracking", "provider": "HubSpot", "processor": "hubspot", "category": "marketing",
-      "patterns": ["js.hs-scripts.com", "js.hs-analytics.net", "js.hs-banner.com", "js.usemessages.com", "js.hubspot.com"],
-      "inline": ["hs-script-loader", "_hsq.push"],
-      "cookies": ["__hstc", "hubspotutk", "__hssc", "__hssrc"] },
-    { "id": "hubspot-forms", "provider": "HubSpot", "processor": "hubspot", "category": "functional",
-      "patterns": ["js.hsforms.net"],
+      "cookies": []
+    },
+    {
+      "id": "hotjar",
+      "provider": "Hotjar",
+      "processor": "hotjar",
+      "category": "analytics",
+      "patterns": [
+        "static.hotjar.com",
+        "script.hotjar.com"
+      ],
+      "inline": [
+        "static.hotjar.com",
+        "_hjSettings"
+      ],
+      "cookies": [
+        "_hjSessionUser_*",
+        "_hjSession_*"
+      ]
+    },
+    {
+      "id": "clarity",
+      "provider": "Microsoft Clarity",
+      "processor": "microsoft",
+      "category": "analytics",
+      "patterns": [
+        "clarity.ms"
+      ],
+      "inline": [
+        "clarity.ms/tag"
+      ],
+      "cookies": [
+        "_clck",
+        "_clsk",
+        "CLID",
+        "MUID"
+      ]
+    },
+    {
+      "id": "bing-uet",
+      "provider": "Microsoft Advertising",
+      "processor": "microsoft",
+      "category": "marketing",
+      "patterns": [
+        "bat.bing.com"
+      ],
+      "inline": [
+        "bat.bing.com",
+        "uetq"
+      ],
+      "cookies": [
+        "_uetsid",
+        "_uetvid",
+        "MUID"
+      ]
+    },
+    {
+      "id": "whatconverts",
+      "provider": "WhatConverts",
+      "processor": "whatconverts",
+      "category": "marketing",
+      "patterns": [
+        "ksrndkehqnwntyxlhgto.com",
+        "whatconverts.com"
+      ],
+      "inline": [
+        "ksrndkehqnwntyxlhgto.com"
+      ],
+      "cookies": [
+        "wc_id"
+      ]
+    },
+    {
+      "id": "linkedin-insight",
+      "provider": "LinkedIn",
+      "processor": "linkedin",
+      "category": "marketing",
+      "patterns": [
+        "snap.licdn.com",
+        "px.ads.linkedin.com",
+        "platform.linkedin.com"
+      ],
+      "inline": [
+        "_linkedin_partner_id",
+        "snap.licdn.com"
+      ],
+      "cookies": [
+        "li_sugr",
+        "bcookie",
+        "lidc",
+        "UserMatchHistory",
+        "AnalyticsSyncHistory"
+      ]
+    },
+    {
+      "id": "tiktok-pixel",
+      "provider": "TikTok",
+      "processor": "tiktok",
+      "category": "marketing",
+      "patterns": [
+        "analytics.tiktok.com"
+      ],
+      "inline": [
+        "analytics.tiktok.com",
+        "ttq.load"
+      ],
+      "cookies": [
+        "_ttp",
+        "_tt_enable_cookie"
+      ]
+    },
+    {
+      "id": "pinterest-tag",
+      "provider": "Pinterest",
+      "processor": "pinterest",
+      "category": "marketing",
+      "patterns": [
+        "s.pinimg.com/ct",
+        "ct.pinterest.com"
+      ],
+      "inline": [
+        "pintrk("
+      ],
+      "cookies": [
+        "_pinterest_ct_ua",
+        "_pin_unauth",
+        "_epik"
+      ]
+    },
+    {
+      "id": "x-pixel",
+      "provider": "X (Twitter)",
+      "processor": "x",
+      "category": "marketing",
+      "patterns": [
+        "static.ads-twitter.com",
+        "analytics.twitter.com",
+        "platform.twitter.com"
+      ],
+      "inline": [
+        "twq("
+      ],
+      "cookies": [
+        "personalization_id",
+        "muc_ads",
+        "guest_id"
+      ]
+    },
+    {
+      "id": "snap-pixel",
+      "provider": "Snapchat",
+      "processor": "snapchat",
+      "category": "marketing",
+      "patterns": [
+        "sc-static.net/scevent"
+      ],
+      "inline": [
+        "snaptr("
+      ],
+      "cookies": [
+        "_scid"
+      ]
+    },
+    {
+      "id": "reddit-pixel",
+      "provider": "Reddit",
+      "processor": "reddit",
+      "category": "marketing",
+      "patterns": [
+        "redditstatic.com/ads"
+      ],
+      "inline": [
+        "rdt('init'",
+        "rdt(\"init\""
+      ],
+      "cookies": [
+        "_rdt_uuid"
+      ]
+    },
+    {
+      "id": "klaviyo",
+      "provider": "Klaviyo",
+      "processor": "klaviyo",
+      "category": "marketing",
+      "patterns": [
+        "static.klaviyo.com",
+        "static-tracking.klaviyo.com"
+      ],
+      "inline": [
+        "klaviyo.com/onsite"
+      ],
+      "cookies": [
+        "__kla_id"
+      ]
+    },
+    {
+      "id": "hubspot-tracking",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "category": "marketing",
+      "patterns": [
+        "js.hs-scripts.com",
+        "js.hs-analytics.net",
+        "js.hs-banner.com",
+        "js.usemessages.com",
+        "js.hubspot.com"
+      ],
+      "inline": [
+        "hs-script-loader",
+        "_hsq.push"
+      ],
+      "cookies": [
+        "__hstc",
+        "hubspotutk",
+        "__hssc",
+        "__hssrc"
+      ]
+    },
+    {
+      "id": "hubspot-forms",
+      "provider": "HubSpot",
+      "processor": "hubspot",
+      "category": "functional",
+      "patterns": [
+        "js.hsforms.net"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "mailchimp", "provider": "Mailchimp", "processor": "mailchimp", "category": "functional",
-      "patterns": ["chimpstatic.com", "list-manage.com"],
+      "cookies": []
+    },
+    {
+      "id": "mailchimp",
+      "provider": "Mailchimp",
+      "processor": "mailchimp",
+      "category": "functional",
+      "patterns": [
+        "chimpstatic.com",
+        "list-manage.com"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "intercom", "provider": "Intercom", "processor": "intercom", "category": "functional",
-      "patterns": ["widget.intercom.io", "js.intercomcdn.com"],
-      "inline": ["widget.intercom.io"],
-      "cookies": ["intercom-id-*", "intercom-session-*"] },
-    { "id": "tawk", "provider": "Tawk.to", "processor": "tawk", "category": "functional",
-      "patterns": ["embed.tawk.to"],
-      "inline": ["embed.tawk.to"],
-      "cookies": ["TawkConnectionTime", "twk_idm_key", "__tawkuuid"] },
-    { "id": "crisp", "provider": "Crisp", "processor": "crisp", "category": "functional",
-      "patterns": ["client.crisp.chat"],
-      "inline": ["client.crisp.chat"],
-      "cookies": ["crisp-client*"] },
-    { "id": "zendesk", "provider": "Zendesk", "processor": "zendesk", "category": "functional",
-      "patterns": ["static.zdassets.com", "v2.zopim.com"],
-      "inline": ["static.zdassets.com"],
-      "cookies": ["__zlcmid"] },
-    { "id": "calendly", "provider": "Calendly", "processor": "calendly", "category": "functional", "embed": true,
-      "patterns": ["assets.calendly.com", "calendly.com/"],
+      "cookies": []
+    },
+    {
+      "id": "intercom",
+      "provider": "Intercom",
+      "processor": "intercom",
+      "category": "functional",
+      "patterns": [
+        "widget.intercom.io",
+        "js.intercomcdn.com"
+      ],
+      "inline": [
+        "widget.intercom.io"
+      ],
+      "cookies": [
+        "intercom-id-*",
+        "intercom-session-*"
+      ]
+    },
+    {
+      "id": "tawk",
+      "provider": "Tawk.to",
+      "processor": "tawk",
+      "category": "functional",
+      "patterns": [
+        "embed.tawk.to"
+      ],
+      "inline": [
+        "embed.tawk.to"
+      ],
+      "cookies": [
+        "TawkConnectionTime",
+        "twk_idm_key",
+        "__tawkuuid"
+      ]
+    },
+    {
+      "id": "crisp",
+      "provider": "Crisp",
+      "processor": "crisp",
+      "category": "functional",
+      "patterns": [
+        "client.crisp.chat"
+      ],
+      "inline": [
+        "client.crisp.chat"
+      ],
+      "cookies": [
+        "crisp-client*"
+      ]
+    },
+    {
+      "id": "zendesk",
+      "provider": "Zendesk",
+      "processor": "zendesk",
+      "category": "functional",
+      "patterns": [
+        "static.zdassets.com",
+        "v2.zopim.com"
+      ],
+      "inline": [
+        "static.zdassets.com"
+      ],
+      "cookies": [
+        "__zlcmid"
+      ]
+    },
+    {
+      "id": "calendly",
+      "provider": "Calendly",
+      "processor": "calendly",
+      "category": "functional",
+      "embed": true,
+      "patterns": [
+        "assets.calendly.com",
+        "calendly.com/"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "trustpilot", "provider": "Trustpilot", "processor": "trustpilot", "category": "functional",
-      "patterns": ["widget.trustpilot.com"],
+      "cookies": []
+    },
+    {
+      "id": "trustpilot",
+      "provider": "Trustpilot",
+      "processor": "trustpilot",
+      "category": "functional",
+      "patterns": [
+        "widget.trustpilot.com"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "matomo", "provider": "Matomo", "processor": "matomo", "category": "analytics",
-      "patterns": ["/matomo.js", "/piwik.js", "matomo.cloud"],
-      "inline": ["_paq.push"],
-      "cookies": ["_pk_id.*", "_pk_ses.*"] },
-    { "id": "cloudflare-insights", "provider": "Cloudflare Web Analytics", "processor": "cloudflare", "category": "analytics",
-      "patterns": ["static.cloudflareinsights.com"],
+      "cookies": []
+    },
+    {
+      "id": "matomo",
+      "provider": "Matomo",
+      "processor": "matomo",
+      "category": "analytics",
+      "patterns": [
+        "/matomo.js",
+        "/piwik.js",
+        "matomo.cloud"
+      ],
+      "inline": [
+        "_paq.push"
+      ],
+      "cookies": [
+        "_pk_id.*",
+        "_pk_ses.*"
+      ]
+    },
+    {
+      "id": "cloudflare-insights",
+      "provider": "Cloudflare Web Analytics",
+      "processor": "cloudflare",
+      "category": "analytics",
+      "patterns": [
+        "static.cloudflareinsights.com"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "jetpack-stats", "provider": "Jetpack Stats", "processor": "automattic", "category": "analytics",
-      "patterns": ["stats.wp.com", "pixel.wp.com"],
-      "inline": ["_stq.push"],
-      "cookies": ["tk_ai"] },
-    { "id": "woo-attribution", "provider": "WooCommerce", "processor": "", "category": "analytics",
-      "patterns": ["sourcebuster/sourcebuster", "order-attribution"],
-      "inline": ["wc_order_attribution"],
-      "cookies": ["sbjs_*"] },
-    { "id": "stripe", "provider": "Stripe", "processor": "stripe", "category": "necessary",
-      "patterns": ["js.stripe.com"],
+      "cookies": []
+    },
+    {
+      "id": "jetpack-stats",
+      "provider": "Jetpack Stats",
+      "processor": "automattic",
+      "category": "analytics",
+      "patterns": [
+        "stats.wp.com",
+        "pixel.wp.com"
+      ],
+      "inline": [
+        "_stq.push"
+      ],
+      "cookies": [
+        "tk_ai"
+      ]
+    },
+    {
+      "id": "woo-attribution",
+      "provider": "WooCommerce",
+      "processor": "",
+      "category": "analytics",
+      "patterns": [
+        "sourcebuster/sourcebuster",
+        "order-attribution"
+      ],
+      "inline": [
+        "wc_order_attribution"
+      ],
+      "cookies": [
+        "sbjs_*"
+      ]
+    },
+    {
+      "id": "stripe",
+      "provider": "Stripe",
+      "processor": "stripe",
+      "category": "necessary",
+      "patterns": [
+        "js.stripe.com"
+      ],
       "inline": [],
-      "cookies": ["__stripe_mid", "__stripe_sid"] },
-    { "id": "paypal", "provider": "PayPal", "processor": "paypal", "category": "necessary",
-      "patterns": ["paypal.com/sdk", "paypalobjects.com"],
+      "cookies": [
+        "__stripe_mid",
+        "__stripe_sid"
+      ]
+    },
+    {
+      "id": "paypal",
+      "provider": "PayPal",
+      "processor": "paypal",
+      "category": "necessary",
+      "patterns": [
+        "paypal.com/sdk",
+        "paypalobjects.com"
+      ],
       "inline": [],
-      "cookies": [] },
-    { "id": "cloudflare-turnstile", "provider": "Cloudflare Turnstile", "processor": "cloudflare", "category": "necessary",
-      "patterns": ["challenges.cloudflare.com"],
+      "cookies": []
+    },
+    {
+      "id": "cloudflare-turnstile",
+      "provider": "Cloudflare Turnstile",
+      "processor": "cloudflare",
+      "category": "necessary",
+      "patterns": [
+        "challenges.cloudflare.com"
+      ],
       "inline": [],
-      "cookies": [] }
+      "cookies": []
+    }
   ],
   "processors": {
-    "google":     { "name": "Google",                    "purpose": "Analytics, advertising, video, maps and spam protection", "privacy_url": "https://policies.google.com/privacy" },
-    "vimeo":      { "name": "Vimeo",                     "purpose": "Embedded video",                         "privacy_url": "https://vimeo.com/privacy" },
-    "meta":       { "name": "Meta Platforms (Facebook, Instagram)", "purpose": "Advertising and social media embeds", "privacy_url": "https://www.facebook.com/privacy/policy/" },
-    "hotjar":     { "name": "Hotjar",                    "purpose": "Behaviour analytics (heatmaps and recordings)", "privacy_url": "https://www.hotjar.com/legal/policies/privacy/" },
-    "microsoft":  { "name": "Microsoft (Clarity, Advertising)", "purpose": "Analytics and advertising",           "privacy_url": "https://privacy.microsoft.com/privacystatement" },
-    "linkedin":   { "name": "LinkedIn",                  "purpose": "Advertising and conversion tracking",    "privacy_url": "https://www.linkedin.com/legal/privacy-policy" },
-    "tiktok":     { "name": "TikTok",                    "purpose": "Advertising and conversion tracking",    "privacy_url": "https://www.tiktok.com/legal/privacy-policy-eea" },
-    "pinterest":  { "name": "Pinterest",                 "purpose": "Advertising and conversion tracking",    "privacy_url": "https://policy.pinterest.com/privacy-policy" },
-    "x":          { "name": "X (Twitter)",               "purpose": "Advertising and social media embeds",    "privacy_url": "https://x.com/privacy" },
-    "snapchat":   { "name": "Snap Inc.",                 "purpose": "Advertising and conversion tracking",    "privacy_url": "https://values.snap.com/privacy/privacy-policy" },
-    "reddit":     { "name": "Reddit",                    "purpose": "Advertising and conversion tracking",    "privacy_url": "https://www.reddit.com/policies/privacy-policy" },
-    "klaviyo":    { "name": "Klaviyo",                   "purpose": "Email marketing",                        "privacy_url": "https://www.klaviyo.com/legal/privacy/privacy-notice" },
-    "hubspot":    { "name": "HubSpot",                   "purpose": "Marketing automation, forms and live chat", "privacy_url": "https://legal.hubspot.com/privacy-policy" },
-    "mailchimp":  { "name": "Mailchimp (Intuit)",        "purpose": "Email marketing and sign-up forms",      "privacy_url": "https://www.intuit.com/privacy/statement/" },
-    "intercom":   { "name": "Intercom",                  "purpose": "Live chat and customer support",         "privacy_url": "https://www.intercom.com/legal/privacy" },
-    "tawk":       { "name": "tawk.to",                   "purpose": "Live chat",                              "privacy_url": "https://www.tawk.to/privacy-policy/" },
-    "crisp":      { "name": "Crisp",                     "purpose": "Live chat",                              "privacy_url": "https://crisp.chat/en/privacy/" },
-    "zendesk":    { "name": "Zendesk",                   "purpose": "Live chat and customer support",         "privacy_url": "https://www.zendesk.com/company/agreements-and-terms/privacy-notice/" },
-    "calendly":   { "name": "Calendly",                  "purpose": "Appointment booking",                    "privacy_url": "https://calendly.com/legal/privacy-notice" },
-    "trustpilot": { "name": "Trustpilot",                "purpose": "Customer reviews",                       "privacy_url": "https://legal.trustpilot.com/for-reviewers/end-user-privacy-terms" },
-    "matomo":     { "name": "Matomo (InnoCraft)",        "purpose": "Website analytics",                      "privacy_url": "https://matomo.org/privacy-policy/" },
-    "cloudflare": { "name": "Cloudflare",                "purpose": "Security, performance and web analytics", "privacy_url": "https://www.cloudflare.com/privacypolicy/" },
-    "automattic": { "name": "Automattic (Jetpack, WooCommerce)", "purpose": "Website statistics",             "privacy_url": "https://automattic.com/privacy/" },
-    "stripe":     { "name": "Stripe",                    "purpose": "Card payments and fraud prevention",     "privacy_url": "https://stripe.com/gb/privacy" },
-    "paypal":     { "name": "PayPal",                    "purpose": "Payments and fraud prevention",          "privacy_url": "https://www.paypal.com/uk/legalhub/privacy-full" }
+    "google": {
+      "name": "Google",
+      "purpose": "Analytics, advertising, video, maps and spam protection",
+      "privacy_url": "https://policies.google.com/privacy"
+    },
+    "vimeo": {
+      "name": "Vimeo",
+      "purpose": "Embedded video",
+      "privacy_url": "https://vimeo.com/privacy"
+    },
+    "meta": {
+      "name": "Meta Platforms (Facebook, Instagram)",
+      "purpose": "Advertising and social media embeds",
+      "privacy_url": "https://www.facebook.com/privacy/policy/"
+    },
+    "hotjar": {
+      "name": "Hotjar",
+      "purpose": "Behaviour analytics (heatmaps and recordings)",
+      "privacy_url": "https://www.hotjar.com/legal/policies/privacy/"
+    },
+    "microsoft": {
+      "name": "Microsoft (Clarity, Advertising)",
+      "purpose": "Analytics and advertising",
+      "privacy_url": "https://privacy.microsoft.com/privacystatement"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "purpose": "Advertising and conversion tracking",
+      "privacy_url": "https://www.linkedin.com/legal/privacy-policy"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "purpose": "Advertising and conversion tracking",
+      "privacy_url": "https://www.tiktok.com/legal/privacy-policy-eea"
+    },
+    "pinterest": {
+      "name": "Pinterest",
+      "purpose": "Advertising and conversion tracking",
+      "privacy_url": "https://policy.pinterest.com/privacy-policy"
+    },
+    "x": {
+      "name": "X (Twitter)",
+      "purpose": "Advertising and social media embeds",
+      "privacy_url": "https://x.com/privacy"
+    },
+    "snapchat": {
+      "name": "Snap Inc.",
+      "purpose": "Advertising and conversion tracking",
+      "privacy_url": "https://values.snap.com/privacy/privacy-policy"
+    },
+    "reddit": {
+      "name": "Reddit",
+      "purpose": "Advertising and conversion tracking",
+      "privacy_url": "https://www.reddit.com/policies/privacy-policy"
+    },
+    "klaviyo": {
+      "name": "Klaviyo",
+      "purpose": "Email marketing",
+      "privacy_url": "https://www.klaviyo.com/legal/privacy/privacy-notice"
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "purpose": "Marketing automation, forms and live chat",
+      "privacy_url": "https://legal.hubspot.com/privacy-policy"
+    },
+    "mailchimp": {
+      "name": "Mailchimp (Intuit)",
+      "purpose": "Email marketing and sign-up forms",
+      "privacy_url": "https://www.intuit.com/privacy/statement/"
+    },
+    "intercom": {
+      "name": "Intercom",
+      "purpose": "Live chat and customer support",
+      "privacy_url": "https://www.intercom.com/legal/privacy"
+    },
+    "tawk": {
+      "name": "tawk.to",
+      "purpose": "Live chat",
+      "privacy_url": "https://www.tawk.to/privacy-policy/"
+    },
+    "crisp": {
+      "name": "Crisp",
+      "purpose": "Live chat",
+      "privacy_url": "https://crisp.chat/en/privacy/"
+    },
+    "zendesk": {
+      "name": "Zendesk",
+      "purpose": "Live chat and customer support",
+      "privacy_url": "https://www.zendesk.com/company/agreements-and-terms/privacy-notice/"
+    },
+    "calendly": {
+      "name": "Calendly",
+      "purpose": "Appointment booking",
+      "privacy_url": "https://calendly.com/legal/privacy-notice"
+    },
+    "trustpilot": {
+      "name": "Trustpilot",
+      "purpose": "Customer reviews",
+      "privacy_url": "https://legal.trustpilot.com/for-reviewers/end-user-privacy-terms"
+    },
+    "matomo": {
+      "name": "Matomo (InnoCraft)",
+      "purpose": "Website analytics",
+      "privacy_url": "https://matomo.org/privacy-policy/"
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "purpose": "Security, performance and web analytics",
+      "privacy_url": "https://www.cloudflare.com/privacypolicy/"
+    },
+    "automattic": {
+      "name": "Automattic (Jetpack, WooCommerce)",
+      "purpose": "Website statistics",
+      "privacy_url": "https://automattic.com/privacy/"
+    },
+    "stripe": {
+      "name": "Stripe",
+      "purpose": "Card payments and fraud prevention",
+      "privacy_url": "https://stripe.com/gb/privacy"
+    },
+    "paypal": {
+      "name": "PayPal",
+      "purpose": "Payments and fraud prevention",
+      "privacy_url": "https://www.paypal.com/uk/legalhub/privacy-full"
+    },
+    "whatconverts": {
+      "name": "WhatConverts (Icon Digital LLC)",
+      "purpose": "Call and lead tracking",
+      "privacy_url": "https://www.whatconverts.com/privacy-policy/"
+    }
   }
 }
